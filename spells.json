@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Example Spell",
+    "class": "Classes",
+    "level": "x level type",
+    "range": "x feet",
+    "components": "V, S, M (Items)",
+    "time": "x action",
+    "duration": "Instantaneous",
+    "description": "uwu",
+    "ahl": "At Higher Levels"
+  },
+  
+  {
+    "name": "Fireball",
+    "class": "Sorcerer, Wizard, Cleric(Light), Druid(Fiend)",
+    "level": "3rd level evocation",
+    "range": "150 feet",
+    "components": "V, S, M (A tiny ball of bat guano and sulfur)",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot radius Sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable Objects in the area that aren't being worn or carried.",
+    "ahl": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+  },
+  
+  {
+    "name": "Ice Knife",
+    "class": "Druid, Sorcerer, Wizard",
+    "level": "1st level conjuration",
+    "range": "60 feet",
+    "components": "S, M (A drop of water or piece of ice)",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.", 
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st."
+  },
+  
+  {
+    "name": "Prestidigitation",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip transmutation",
+    "range": "10 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Up to 1 hour",
+    "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical Effects within range.\n\n• You create an Instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n\n• You instantaneously light or snuff out a Candle, a torch, or a small campfire.\n\n• You instantaneously clean or soil an object no larger than 1 cubic foot.\n\n• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n\n• You make a color, a small mark, or a Symbol appear on an object or a surface for 1 hour.\n\n• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous Effects active at a time, and you can dismiss such an effect as an action."
+   },
+  
+   {
+    "name": "Divine Favor",
+    "class": "Paladin",
+    "level": "1st level evocation",
+    "range": "Self",
+    "components": "V, S",
+    "time": "1 bonus action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal and extra 1d4 radiant damage on a hit."
+   },
+  
+   {
+    "name": "Shield of Faith",
+    "class": "Cleric, Paladin",
+    "level": "1st level abjuration",
+    "range": "60 feet",
+    "components": "V, S, M (A small parchment with a bit of holy text written on it)",
+    "time": "1 bonus action",
+    "duration": "Concentration, up to 10 minutes",
+    "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the Duration."
+   },
+    
+   {
+    "name": "Wrathful Smite",
+    "class": "Paladin",
+    "level": "1st level evocation",
+    "range": "Self",
+    "components": "V",
+    "time": "1 bonus action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage.\nAdditionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+   },
+  
+   {
+    "name": "Sanctuary",
+    "class": "Cleric",
+    "level": "1st level abjuration",
+    "range": "30 feet",
+    "components": "V, S, M (A small silver mirror)",
+    "time": "1 bonus action",
+    "duration": "1 minute",
+    "description": "You ward a creature within range against attack.\nUntil the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends. "
+   },
+  
+   {
+    "name": "Sleep",
+    "class": "Bard, Sorcerer, Wizard",
+    "level": "1st level enchantment",
+    "range": "90 feet",
+    "components": "V, S, M (A pinch of fine sand, rose petals, or a cricket)",
+    "time": "1 action",
+    "duration": "1 minute",
+    "description": "This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.\n\nUndead and creatures immune to being charmed aren’t affected by this spell. ",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
+   }
+]
