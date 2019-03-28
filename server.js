@@ -15,7 +15,7 @@ const Discord = require("discord.js");
 const XMLHttpRequest = require('xmlhttprequest');
 const client = new Discord.Client();
 const fs = require('fs');
-const spells = require("./spells.json");
+const spells = require("./resources/spells.json");
 
 const Enmap = require('enmap');
 
