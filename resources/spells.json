@@ -11,16 +11,743 @@
     "ahl": "At Higher Levels"
   },
   
-  {
-    "name": "Fireball",
-    "class": "Sorcerer, Wizard, Cleric(Light), Druid(Fiend)",
-    "level": "3rd level evocation",
-    "range": "150 feet",
-    "components": "V, S, M (A tiny ball of bat guano and sulfur)",
+  
+   {
+    "name": "Acid Splash",
+    "class": "Sorcerer, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "60 feet",
+    "components": "V, S",
     "time": "1 action",
     "duration": "Instantaneous",
-    "description": "A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot radius Sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable Objects in the area that aren't being worn or carried.",
-    "ahl": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    "description": "You hurl a bubble of acid. \n\n Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage. ",
+    "ahl": "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+
+  {
+    "name": "Blade Ward",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Abjuration",
+    "range": "Self",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "1 Round",
+    "description": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+  },
+  
+  {
+    "name": "Booming Blade",
+    "class": "Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "5 feet",
+    "components": "V, M (a weapon)",
+    "time": "1 action",
+    "duration": "1 Round",
+    "description": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. \n\nOn a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves be- fore then, it immediately takes 1d8 thunder damage, and the spell ends. \n\nThis spell's damage increases when you reach higher levels.",
+    "ahl": "At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level."
+  },
+  
+  {
+    "name": "Chill Touch",
+    "class": "Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Necromancy",
+    "range": "120 feet",
+    "components": "V, S,",
+    "time": "1 action",
+    "duration": "1 round",
+    "description": "You create a ghostly, skeletal hand in the space of a creature within range. \n\nMake a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
+    "ahl": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Control Flames",
+    "class": "Druid, Sorcerer, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "60 feet",
+    "components": "S",
+    "time": "1 action",
+    "duration": "Instantaneous or 1 hour",
+    "description": "You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways: \n\n- You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location. \n\n- You instantaneously extinguish the flames within the cube. \n\n- You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour. \n\n- You cause simple shapes — such as the vague form of a creature, an inanimate object, or a location — to appear within the flames and animate as you like. The shapes last for 1 hour. \n\nIf you cast this spell multiple times, you can have up to three non-instantaneous"
+  },
+
+  {
+    "name": "Create Bonfire",
+    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "60 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire’s space for the first time on a turn or ends its turn there. \n\nThe bonfire ignites flammable objects in its area that aren’t being worn or carried.",
+    "ahl": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+
+  {
+    "name": "Dancing Lights",
+    "class": "Bard, Sorcerer, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "120 feet",
+    "components": "V, S, M (a bit of phosphorus or wychwood, or a glowworm)",
+    "time": "1 action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. \n\nYou can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. \n\nAs a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range."
+  },
+  
+  {
+    "name": "Druidcraft",
+    "class": "Druid",
+    "level": "Cantrip Transmutation",
+    "range": "30 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "Whispering to the spirits of nature, you create one of the following effects within range: \n\n • You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb  for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. \n\n• You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. \n\n• You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect  must fit in a 5-foot cube. \n\n• You instantly light or snuff out a candle, a torch, or a small campfire."
+  },
+
+  {
+    "name": "Eldritch Blast",
+    "class": "Warlock",
+    "level": "Cantrip Evocation",
+    "range": "120 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.",
+    "ahl": "The spell creates more than one beam when you reach higher levels: \n\nTwo beams at 5th level \n\nThree beams at 11th level \n\nFour beams at 17th level. \n\nYou can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
+  },
+  
+  {
+    "name": "Fire Bolt", 
+    "class": "Sorcerer, Wizard", 
+    "level": "Evocation Cantrip", 
+    "range": "120 feet", 
+    "components": "V, S", 
+    "time": "1 action", 
+    "duration": "Instantaneous", 
+    "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isnt being worn or carried.",
+    "ahl": "This spells damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." 
+  },
+  
+  {
+    "name": "Friends",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Enchantment",
+    "range": "Self",
+    "components": "S, M (a small amount of makeup applied to the face as this spell is cast)",
+    "time": "1 action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn’t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM’s discretion), depending on the nature of your interaction with it."
+  },
+
+  {
+    "name": "Frostbite",
+    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "60 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.",
+    "ahl": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+  
+  {
+    "name": "Green-Flame Blade",
+    "class": "Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "5 feet",
+    "components": "V, M (a weapon)",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier. This spell's damage increases when you reach higher levels.",
+    "ahl": "At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level."
+  },
+  
+  {
+    "name": "Guidance",
+    "class": "Cleric, Druid",
+    "level": "Cantrip Divination",
+    "range": "Touch",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
+  },
+ 
+  {
+    "name": "Gust",
+    "class": "Druid, Sorcerer, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "30 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "You seize the air and compel it to create one of the following effects at a point you can see within range: \n\n• One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you. \n\n• You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn’t pushed with enough force to cause damage. \n\n• You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze."
+  },
+  
+  {
+    "name": "Infestation",
+    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "30 feet",
+    "components": "V, S, M (a living flea)",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction: 1., north; 2, south; 3, east; or 4, west. This movement doesn’t provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.",
+    "ahl": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+  
+  {
+    "name": "Mage Hand", 
+    "class": "Bard, Sorcerer, Warlock, Wizard", 
+    "level": "Conjuration Cantrip", 
+    "range": "30 feet", 
+    "components": "V, S", 
+    "time": "1 action", 
+    "duration": "1 minute", 
+    "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\n\nThe hand can't attack, activate magical items, or carry more than 10 pounds." 
+  },
+  
+    {
+    "name": "Light",
+    "class": "Bard, Cleric, Sorcerer, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "Touch",
+    "components": "V, M (a firefly or phosphorescent moss)",
+    "time": "1 action",
+    "duration": "1 hour",
+    "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action. \n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
+  },
+  
+  {
+    "name": "Lightning Lure",
+    "class": "Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "15 feet",
+    "components": "V",
+    "time": "1 action",
+    "duration": "Instantaneous",
+    "description": "You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. \n\nThe target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.",
+    "ahl": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Mage Hand",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "30 feet",
+    "components": "V, S",
+    "time": "1 action",
+    "duration": "1 minute",
+    "description": "A spectral, floating hand appears at a point you choose within range. \n\nThe hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. \n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. \n\nThe hand can’t attack, activate magical items, or carry more than 10 pounds."
+  },
+  
+  {
+    "name": "Magic Stone",
+    "class": "Druid, Warlock",
+    "level": "Cantrip Transmutation",
+    "range": "Touch",
+    "components": "V, S",
+    "time": "1 bonus action",
+    "duration": "1 minute",
+    "description": "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, a pebble has a range of 60 feet. If someone else attacks with a pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Whether the attack hits or misses, the spell then ends on the stone. \n\nIf you cast this spell again, the spell ends on any pebbles still affected by your previous casting."
+  },
+  
+  {
+    "name": "Mending",
+    "class": "Bard, Cleric, Druid, Sorcerer, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "Touch",
+    "components": "V, S, M (two lodestones)",
+    "time": "1 Minute",
+    "duration": "Instantaneous",
+    "description": "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. \n\nAs long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. \n\nThis spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object."
+  },
+  
+  {
+    "name": "Message", 
+    "class": "Bard, Sorcerer, Wizard", 
+    "level": "Transmutation Cantrip", 
+    "range": "120 feet", 
+    "components": "V, S, M(a short piece of copper wire)", 
+    "time": "1 action", 
+    "duration": "1 round", 
+    "description": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.\n\nYou can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings."
+  },
+  
+  {
+    "name": "Minor Illusuion", 
+    "class": "Bard, Sorcerer, Warlock, Wizard", 
+    "level": "Illusion Cantrip", 
+    "range": "30 feet", 
+    "components": "S, M(a bit of fleece)", 
+    "time": "1 action", 
+    "duration": "1 minute", 
+    "description": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.\n\nIf you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone elses voice, a lions roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.\n\nIf you create an image of an object such as a chair, muddy footprints, or a small chest it must be no larger than a 5-foot cube. The image cant create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.\n\nIf a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature." 
+  },
+  
+  {
+    "name": "Mold earth",
+    "class": "Druid, Sorcerer, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "30 feet",
+    "components": "S",
+    "time": "1 Action",
+    "duration": "Instantaneous or 1 hour",
+    "description": "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways: \n\n• If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage. \n\n• You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour. \n\n• If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour. \n\nIf you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+  },
+  
+  {
+    "name": "Poison Spray",
+    "class": "Druid, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "10 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.",
+    "ahl": "This spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), 17th level (4d12)."
+  },
+  
+  {
+    "name": "Prestidigitation",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "10 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Up to 1 hour",
+    "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range: \n\n-You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor. \n\n-You instantaneously light or snuff out a candle, a torch, or a small campfire. \n\n-You instantaneously clean or soil an object no larger than 1 cubic foot. \n\n-You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. \n\n-You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour. \n\n-You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. \n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+  },
+  
+  {
+    "name": "Primal Savagery",
+    "class": "Druid",
+    "level": "Cantrip Transmutation",
+    "range": "Self",
+    "components": "S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal.",
+    "ahl": "The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+  },
+  
+  {
+    "name": "Produce Flame",
+    "class": "Druid",
+    "level": "Cantrip Conjuration",
+    "range": "Self",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "10 minutes",
+    "description": "A flickering flame appears in your hand. \n\nThe flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. \n\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.",
+    "ahl": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Ray of Frost",
+    "class": "Sorcerer, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "60 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
+    "ahl": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Resistance",
+    "class": "Cleric, Druid",
+    "level": "Cantrip Abjuration",
+    "range": "Touch",
+    "components": "V, S, M (a miniature cloak)",
+    "time": "1 Action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after the saving throw. The spell then ends."
+ },
+  
+  {
+    "name": "Sacred Flame",
+    "class": "Cleric",
+    "level": "Cantrip Evocation",
+    "range": "60 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw. ",
+    "ahl": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Shape Water",
+    "class": "Druid, Sorcerer, Wizard",
+    "level": "Cantrip Transmutation",
+    "range": "30 feet",
+    "components": "S",
+    "time": "1 Action",
+    "duration": "Instantaneous or 1 hour",
+    "description": "You choose an area of water that you can see within range and that fits within a 5-foot cube. \n\nYou manipulate it in one of the following ways: \n\n• You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage. \n\n• You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour. \n\n• You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour. \n\n• You freeze the water, provided that there are no crea- tures in it. The water unfreezes in 1 hour. \n\nIf you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+  },
+  
+  {
+    "name": "Shillelagh",
+    "class": "Druid",
+    "level": "Cantrip Transmutation",
+    "range": "Touch",
+    "components": "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+    "time": "1 Bonus Action",
+    "duration": "1 minute",
+    "description": "The wood of a club or quarterstaff you are holding is imbued with nature’s power. \n\nFor the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon."
+  },
+  
+  {
+    "name": "Shocking Grasp",
+    "class": "Sorcerer, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "Touch",
+    "components": "V, S ",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. \n\nMake a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.",
+    "ahl": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  },
+  
+  {
+    "name": "Spare the Dying",
+    "class": "Cleric",
+    "level": "Cantrip Necromancy",
+    "range": "Touch",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs."
+  },
+  
+  {
+    "name": "Sword Burst",
+    "class": "Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Conjuration",
+    "range": "5 feet",
+    "components": "V",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You create a momentary circle of spectral blades that sweep around you. \n\nEach creature within range, other than you, must succeed on a Dexterity saving throw or take 1d6 force damage. ",
+    "ahl": "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+  
+  {
+    "name": "Thaumaturgy",
+    "class": "Cleric",
+    "level": "Cantrip Transmutation",
+    "range": "30 feet",
+    "components": "V",
+    "time": "1 Action",
+    "duration": "Up to 1 minute",
+    "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range: \n\n- Your voice booms up to three times as loud as normal for 1 minute. \n\n- You cause flames to flicker, brighten, dim, or change color for 1 minute. \n\n- You cause harmless tremors in the ground for 1 minute. \n\n- You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. \n\n- You instantaneously cause an unlocked door or window to fly open or slam shut. \n\n-You alter the appearance of your eyes for 1 minute. \n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+  },
+  
+  {
+    "name": "Thorn Whip",
+    "class": "Druid",
+    "level": "Cantrip Transmutation",
+    "range": "Range: 30 feet",
+    "components": "V, S, M (the stem of a plant with thorns)",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
+    "ahl": "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+  
+  {
+    "name": "Thunderclap",
+    "class": "Bard, Sorcerer, Druid, Warlock, Wizard",
+    "level": "Cantrip Evocation",
+    "range": "5 feet",
+    "components": "S",
+    "time": "1 Action",
+    "duration": " Instantaneous",
+    "description": "You create a burst of thunderous sound, which can be heard 100 feet away. \n\nEach creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.",
+    "ahl": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+  
+  {
+    "name": "Toll the Dead",
+    "class": "Warlock, Wizard, Cleric",
+    "level": "Cantrip Necromancy",
+    "range": "60 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.",
+    "ahl": "The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12)."
+  },
+  
+  {
+    "name": "True Strike",
+    "class": "Bard, Sorcerer, Warlock, Wizard",
+    "level": "Cantrip Divination",
+    "range": "30 feet",
+    "components": "S",
+    "time": "1 Action",
+    "duration": "Concentration, up to 1 round",
+    "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended."
+  },
+  
+  {
+    "name": "Vicious Mockery",
+    "class": "Bard",
+    "level": "Cantrip Enchantment",
+    "range": "60 feet",
+    "components": "V",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. \n\nIf the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
+    "ahl": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+  },
+  
+  {
+    "name": "Word of Radiance",
+    "class": "Cleric",
+    "level": "Cantrip Evocation",
+    "range": "5 feet",
+    "components": "V, M (a holy symbol)",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.",
+    "ahl": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  },
+   
+
+  
+  
+  {
+    "name": "Absorb Elements",
+    "class": "Druid, Ranger, Wizard, Sorcerer",
+    "level": "1st Level Abjuration",
+    "range": "Self",
+    "components": "S",
+    "time": "Special",
+    "duration": "1 round",
+    "description": "1 Reaction, which you take when you take acid, cold, fire, lightning, or thunder damage\n\nThe spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."
+  },
+  
+  {
+    "name": "Alarm (Ritual)",
+    "class": "Ranger, Wizard",
+    "level": "1st Level Abjuration",
+    "range": "30 feet",
+    "components": "V, S, M (a tiny bell and a piece of fine silver wire)",
+    "time": "1 Minute",
+    "duration": "8 hours",
+    "description": "You set an alarm against unwanted intrusion. \n\nChoose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won’t set off the alarm. You also choose whether the alarm is mental or audible. \n\nA mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. \n\nAn audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+  },
+  
+  {
+    "name": "Animal Friendship",
+    "class": "Bard, Druid, Ranger",
+    "level": "1st Level Enchantment",
+    "range": "30 feet",
+    "components": "V, S, M (a morsel of food) ",
+    "time": "1 Action",
+    "duration": "24 hours",
+    "description": "This spell lets you convince a beast that you mean it no harm. \n\nChoose a beast that you can see within range. It must see and hear you. If the beast’s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell’s duration. If you or one of your companions harms the target, the spell ends.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+  },
+  
+  {
+    "name": "Armor of Agathys",
+    "class": "Warlock",
+    "level": "1st Level Abjuration",
+    "range": "Self",
+    "components": "V, S, M (a cup of water)",
+    "time": "1 Action",
+    "duration": "1 hour",
+    "description": "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. \n\nYou gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot."
+  },
+   
+  {
+    "name": "Arms of Hadar",
+    "class": "Warlock",
+    "level": "1st Level Conjuration",
+    "range": "Self (10-foot radius)",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You invoke the power of Hadar, the Dark Hunger. \n\nTendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can’t take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+  },
+  
+  {
+    "name": "Bane",
+    "class": "Bard, Cleric",
+    "level": "1st Level Enchantment",
+    "range": "30 feet",
+    "components": "V, S, M (A drop of blood)",
+    "time": "1 Action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.",
+    "ahl": "When you cast this spell using a spelslot of 2nd level or higher, you can target one aditional creature for each slot level above 1st."
+  },
+  
+  
+  {
+    "name": "Beast Bond",
+    "class": "Druid, Ranger",
+    "level": "1st Level Divination",
+    "range": "Touch",
+    "components": "V, S, M (a bit of fur wrapped in a cloth)",
+    "time": "1 Action",
+    "duration": "Concentration, up to 10 minute",
+    "description": "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast’s Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see."
+  },
+  
+  
+  {
+    "name": "Bless",
+    "class": "Cleric, Paladin",
+    "level": "1st Level Enchantment",
+    "range": "30 feet",
+    "components": "V, S, M (a sprinkling of holy water)",
+    "time": "1 Action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+  },
+  
+  
+  {
+    "name": "Burning Hands",
+    "class": "Sorcerer, Wizard",
+    "level": "1st Level Evocation",
+    "range": "Self (15-foot cone)",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. \n\nThe fire ignites any flammable objects in the area that aren’t being worn or carried.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+  },
+  
+  
+  {
+    "name": "Catapult",
+    "class": "Sorcerer, Wizard",
+    "level": "1st Level Transmutation",
+    "range": "150 feet",
+    "components": "S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "Choose one object weighing 1 to 5 pounds within range that isn’t being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st."
+  },
+  
+  
+  {
+    "name": "Cause Fear",
+    "class": "Warlock, Wizard",
+    "level": "1st Level Necromancy",
+    "range": "60 feet",
+    "components": "V",
+    "time": "1 Action",
+    "duration": "Concentration, up to 1 minute",
+    "description": "You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above lst. The creatures must be within 30 feet of each other when you target them."
+  },
+  
+  
+  {
+    "name": "Ceremony (Ritual)",
+    "class": "Cleric, Paladin",
+    "level": "1st Level Abjuration",
+    "range": "Cleric, Paladin",
+    "components": "V, S, M (25 gp worth of powdered silver,which the spell consumes)",
+    "time": "1 Hour",
+    "duration": "Instantaneous",
+    "description": "You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting. \n\nAtonement. You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.\n\nBless Water. You touch one vial of water and cause it to become holy water.\n\nComing of Age. You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once. \n\nDedication. You touch one humanoid who wishes to be dedicated to your god’s service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once. \n\nFuneral Rite. You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a wish spell. \n\nWedding. You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."
+  },
+  
+  
+  {
+    "name": "Chaos Bolt",
+    "class": "Sorcerer",
+    "level": "1st Level Evocation",
+    "range": "120 feet",
+    "components": "V, S",
+    "time": "1 Action",
+    "duration": "Instantaneous",
+    "description": "You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the dSs. The number rolled on that die determines the attacks damage type, as shown below. \n\nd8 / Damage Type \n\n1 / Acid \n\n2 / Cold \n\n3 / Fire \n\n4 / Force \n\n5 / Lightning \n\n6 / Poison \n\n7 / Psychic \n\n8 / Thunder \n\nIf you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. A creature can be targeted only once by each casting of this spell.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st."
+  },
+  
+  
+  {
+    "name": "Charm Person",
+    "class": "Bard, Druid, Sorcerer, Warlock, Wizard",
+    "level": "1st Level Enchantment",
+    "range": "30 feet",
+    "components": "",
+    "time": "1 Action",
+    "duration": "1 hour",
+    "description": "You attempt to charm a humanoid you can see within range. \n\nIt must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it.The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+  },
+  
+  {
+    "name": "Divine Favor",
+    "class": "Paladin",
+    "level": "1st level evocation",
+    "range": "Self",
+    "components": "V, S",
+    "time": "1 bonus action",
+    "duration": "Concentation, up to 1 minute",
+    "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal and extra 1d4 radiant damage on a hit."
+   }, 
+  
+  {
+    "name": "Detect Magic (Ritual)", 
+    "class": "Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard", 
+    "level": "1st level Divination", 
+    "range": "Self", 
+    "components": "V, S", 
+    "time": "1 action", 
+    "duration": "Concentration, up to 10 minutes ", 
+    "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. \n\nThe spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+  },
+
+{
+    "name": "False Life", 
+    "class": "Sorcerer, Wizard", 
+    "level": "1st level Necromancy", 
+    "range": "Self", 
+    "components": "V, S, M (a small amount of alcohol or distilled spirits)", 
+    "time": "1 action", 
+    "duration": "1 hour", 
+    "description": "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st." 
+  },
+
+{
+    "name": "Feather Fall", 
+    "class": "Bard, Sorcerer, Wizard", 
+    "level": "1st level Transmutation", 
+    "range": "60 feet", 
+    "components": "V, M (a small feather or piece of down)", 
+    "time": "Special", 
+    "duration": "1 minute", 
+    "description": "Reaction: When you or a creature within 60 feet of you falls \n\nChoose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature."
+  },
+
+{
+    "name": "Find Familiar (Ritual)", 
+    "class": "Wizard", 
+    "level": "1st level Conjuration", 
+    "range": "10 feet", 
+    "components": "V, S, M (10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier)", 
+    "time": "1 hour", 
+    "duration": "Instantaneous", 
+    "description": "You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk. lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey or fiend (your choice) instead of a beast.\n\nYour familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can’t attack, but it can take other actions as normal.\n\nWhen the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.\n\nWhile your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.\n\nAs an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits you summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.\n\nYou can’t have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.\n\nFinally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
   },
   
   {
@@ -35,27 +762,50 @@
     "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st."
   },
   
-  {
-    "name": "Prestidigitation",
-    "class": "Bard, Sorcerer, Warlock, Wizard",
-    "level": "Cantrip transmutation",
-    "range": "10 feet",
-    "components": "V, S",
-    "time": "1 action",
-    "duration": "Up to 1 hour",
-    "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical Effects within range.\n\n• You create an Instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n\n• You instantaneously light or snuff out a Candle, a torch, or a small campfire.\n\n• You instantaneously clean or soil an object no larger than 1 cubic foot.\n\n• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n\n• You make a color, a small mark, or a Symbol appear on an object or a surface for 1 hour.\n\n• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous Effects active at a time, and you can dismiss such an effect as an action."
-   },
-  
    {
-    "name": "Divine Favor",
-    "class": "Paladin",
-    "level": "1st level evocation",
-    "range": "Self",
-    "components": "V, S",
+    "name": "Identify", 
+    "class": "Artificer Revisited, Bard, Wizard, Cleric (Forge), Cleric (Knowledge)", 
+    "level": "1st level divination", 
+    "range": "Touch", 
+    "components": "V, S, M (a pearl worth at least 100 gp and an owl feather)", 
+    "time": "1 minute (ritual)", 
+    "duration": "Instantaneous", 
+    "description": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\nIf you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it."
+  },
+  
+ {
+    "name": "Mage Armor", 
+    "class": "Sorcerer, Wizard", 
+    "level": "1st level Abjuration", 
+    "range": "Touch", 
+    "components": "V, S, M (a piece of cured leather)", 
+    "time": "1 action", 
+    "duration": "8 hours", 
+    "description": "You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends it if the target dons armor or if you dismiss the spell as an action."
+  },
+
+  {
+    "name": "Magic Missile", 
+    "class": "Sorcerer, Wizard", 
+    "level": "1st level Evocation", 
+    "range": "120 feet", 
+    "components": "V, S", 
+    "time": "1 action", 
+    "duration": "Instantaneous", 
+    "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously and you can direct them to hit one creature or several.",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st." 
+  },
+  
+{
+    "name": "Sanctuary",
+    "class": "Cleric",
+    "level": "1st level abjuration",
+    "range": "30 feet",
+    "components": "V, S, M (A small silver mirror)",
     "time": "1 bonus action",
-    "duration": "Concentration, up to 1 minute",
-    "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal and extra 1d4 radiant damage on a hit."
-   },
+    "duration": "1 minute",
+    "description": "You ward a creature within range against attack.\nUntil the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends. "
+   },  
   
    {
     "name": "Shield of Faith",
@@ -67,7 +817,19 @@
     "duration": "Concentration, up to 10 minutes",
     "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the Duration."
    },
-    
+  
+ {
+    "name": "Sleep",
+    "class": "Bard, Sorcerer, Wizard",
+    "level": "1st level enchantment",
+    "range": "90 feet",
+    "components": "V, S, M (A pinch of fine sand, rose petals, or a cricket)",
+    "time": "1 action",
+    "duration": "1 minute",
+    "description": "This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.\n\nUndead and creatures immune to being charmed aren’t affected by this spell. ",
+    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
+   },   
+ 
    {
     "name": "Wrathful Smite",
     "class": "Paladin",
@@ -79,26 +841,42 @@
     "description": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage.\nAdditionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
    },
   
-   {
-    "name": "Sanctuary",
-    "class": "Cleric",
-    "level": "1st level abjuration",
-    "range": "30 feet",
-    "components": "V, S, M (A small silver mirror)",
-    "time": "1 bonus action",
-    "duration": "1 minute",
-    "description": "You ward a creature within range against attack.\nUntil the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends. "
-   },
   
-   {
-    "name": "Sleep",
-    "class": "Bard, Sorcerer, Wizard",
-    "level": "1st level enchantment",
-    "range": "90 feet",
-    "components": "V, S, M (A pinch of fine sand, rose petals, or a cricket)",
+  {
+    "name": "Hold Person", 
+    "class": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard", 
+    "level": "2nd level Enchantment", 
+    "range": "60 feet", 
+    "components": "V, S, M (a small, straight piece of iron)", 
+    "time": "1 action", 
+    "duration": "Concentration, up to 1 minute", 
+    "description": "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.",
+    "ahl": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them." 
+  },
+
+  {
+    "name": "Invisibility", 
+    "class": "Bard, Sorcerer, Warlock, Wizard", 
+    "level": "2nd level Illusion", 
+    "range": "Touch", 
+    "components": "V, S, M (an eyelash encased in gum arabic)", 
+    "time": "1 action", 
+    "duration": "Concentration, up to 1 hour", 
+    "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.",
+    "ahl": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd." 
+  },
+  
+  
+  {
+    "name": "Fireball",
+    "class": "Sorcerer, Wizard, Cleric(Light), Druid(Fiend)",
+    "level": "3rd level evocation",
+    "range": "150 feet",
+    "components": "V, S, M (A tiny ball of bat guano and sulfur)",
     "time": "1 action",
-    "duration": "1 minute",
-    "description": "This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.\n\nUndead and creatures immune to being charmed aren’t affected by this spell. ",
-    "ahl": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
-   }
+    "duration": "Instantaneous",
+    "description": "A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot radius Sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable Objects in the area that aren't being worn or carried.",
+    "ahl": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+  }
+
 ]

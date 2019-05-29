@@ -1,5 +1,5 @@
 {
-  "name": "lucienna",
+  "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
@@ -7,16 +7,17 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "better-sqlite-pool": "^0.2.2",
+    "chalk": "^2.4.2",
+    "cheerio": "^0.22.0",
+    "cheerio-tableparser": "^1.0.1",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.8.5",
     "express": "^4.16.4",
-    "discord.js": "^11.3.2",
-    "fs": "^0.0.2",
-    "path": "^0.12.7",
+    "file-system": "^2.2.2",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.2.2",
-    "enmap": "^4.8.1",
-    "better-sqlite-pool": "^0.2.1",
-    "xmlhttprequest": "^1.8.0",
-    "merge-descriptors": "^1.0.1"
+    "sqlite3": "^4.0.6"
   },
   "engines": {
     "node": "8.x"
