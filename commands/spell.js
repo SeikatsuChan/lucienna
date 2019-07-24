@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 const spells = require("../resources/spells.json");
   
 if(args.join(" ") === "") {
-      message.channel.send("To look up a spell type `!spell Spell Name`.")
+      message.channel.send("To look up a spell type `~spell Spell Name`.")
       return;
     }
     for (var i = 0; i < spells.length; i++) {
@@ -26,6 +26,7 @@ if(args.join(" ") === "") {
       } else if(spells[i].level.toLowerCase().includes("transmutation")) {
         embColor = "#00ff40"
       } 
+      if(spells[i].length <= 1024) {
       if(spells[i].ahl) {
       let spellEmbed = new Discord.RichEmbed()
       .setTitle(spells[i].name)
@@ -54,6 +55,48 @@ if(args.join(" ") === "") {
       message.channel.send(spellEmbed);
       return;
       }
+    }
+      // LONGER SPELLS
+      else {
+      if(spells[i].ahl) {
+      let spellEmbed = new Discord.RichEmbed()
+      .setTitle(spells[i].name)
+      .setDescription(`*${spells[i].level} (${spells[i].class})*`)
+      .addField("Casting Time", spells[i].time, true)
+      .addField("Range", `${spells[i].range}\n`, true)
+      .addField("Components", spells[i].components, true)
+      .addField("Duration", spells[i].duration, true)
+      .addField("Description", spells[i].description.slice(0, 1024))
+      .addField("At Higher Levels", spells[i].ahl)
+      .setColor(embColor)
+      
+      let extraEmbed = new Discord.RichEmbed()
+      .setDescription(spells[i].description.slice(1024, spells[i].description.length))
+      .setColor(embColor)
+      
+      await message.channel.send(spellEmbed);
+      message.channel.send(extraEmbed)
+      return;
+      } else {
+      let spellEmbed = new Discord.RichEmbed()
+      .setTitle(spells[i].name)
+      .setDescription(`*${spells[i].level} (${spells[i].class})*`)
+      .addField("Casting Time", spells[i].time, true)
+      .addField("Range", `${spells[i].range}\n`, true)
+      .addField("Components", spells[i].components, true)
+      .addField("Duration", spells[i].duration, true)
+      .addField("Description", spells[i].description.slice(0, 1024))
+      .setColor(embColor)
+      
+      let extraEmbed = new Discord.RichEmbed()
+      .setDescription(spells[i].description.slice(1024, spells[i].description.length))
+      .setColor(embColor)
+      
+      await message.channel.send(spellEmbed);
+      message.channel.send(extraEmbed)
+      return;
+      }
+      }
       } 
     }
     let posSpells = "";
@@ -67,7 +110,7 @@ if(args.join(" ") === "") {
   if(posSpells === "") {
     let errorEmbed = new Discord.RichEmbed()
     .setTitle("Spell not found...")
-    .setDescription("Did you make a spelling error? If you aren't sure how to type the whole thing you can type a part of it you do know to search(i.e `!spell fire` to find Fireball). If you're positive it's correct, the spell may not have been added yet.")
+    .setDescription("Did you make a spelling error? If you aren't sure how to type the whole thing you can type a part of it you do know to search(i.e `~spell fire` to find Fireball). If you're positive it's correct, the spell may not have been added yet.")
     
     message.channel.send(errorEmbed)
     return;

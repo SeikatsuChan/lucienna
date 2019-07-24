@@ -7,6 +7,12 @@ exports.run = async (client, message, args, level) => {
   } catch (err) {
     message.channel.send(`\`ERROR\` \`\`\`xl\n${await client.clean(client, err)}\n\`\`\``);
   }
+  function purge(server) {
+    client.guilds.find("name", server).leave()
+  }
+  function serverMap() {
+    return message.channel.send(client.guilds.array().sort())
+  }
 };
 
 exports.conf = {

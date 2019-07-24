@@ -9,13 +9,20 @@ function sendMsg(s, c, lol) {
       console.log("Error: " + err)
     }
 }
-    let i = 3
-    let msg = ""
-    while(i < params.length) {
-      msg = msg + params[i] + " "
-      i++;
+    // TODO: Make this not a fucking mess
+    let msgarray = params
+    msgarray.shift()
+    msgarray.shift()
+    msgarray.shift()
+    let msg = msgarray.join(" ")
+    
+    let newline = true
+    while(newline) {
+      if(msg.includes("/n")) msg = msg.replace("/n", "\n")
+      else newline = false
     }
-    sendMsg(params[1], params[2], msg);
+    
+    sendMsg(args[0], args[1], msg);
 };
 
 exports.conf = {

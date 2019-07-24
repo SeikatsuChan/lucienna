@@ -21,12 +21,7 @@ const memos = require("../resources/memos.json");
     }
   }
   else if(args[0] === "add" && args[1]) {
-    var newmemo = {
-      "title": args[1],
-      "content": args.join(" ").slice(args[1].length + 5),
-      "author": message.author.id,
-      "id": memos.length
-    }
+    var newmemo = "{\n\"title\": " + args[1] + ",\n\"content\": " + args.join(" ").slice(args[1].length + 5) + ",\n\"author\": " + message.author.id + ",\n\"id\": " + (memos.length+1) + "\n}"
     let data = JSON.stringify(newmemo);  
     let oldmemos = JSON.stringify(memos)
     fs.writeFileSync('./resources/memos.json', oldmemos + ",\n" + data);
