@@ -10,7 +10,7 @@ exports.run = async (client, message, args, level) => {
     enabled: true,
     guildOnly: false,
     aliases: ["reboot"],
-    permLevel: "God"
+    permLevel: "My Husband"
   };
   
   exports.help = {

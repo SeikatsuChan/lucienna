@@ -27,7 +27,7 @@ var races = [
     ]
     var race = races[Math.floor(Math.random() * races.length)];
     var charClass = classes[Math.floor(Math.random() * classes.length)];
-    var str = Math.floor(Math.random() * 20) + 1
+    var str = Math.floor(Math.random() * 20) + 1 
     var dex = Math.floor(Math.random() * 20) + 1
     var con = Math.floor(Math.random() * 20) + 1
     var int = Math.floor(Math.random() * 20) + 1
@@ -40,15 +40,13 @@ var races = [
         "Wood",
         "Drow"
       ]
+        dex+=2;
       var sub = subs[Math.floor(Math.random() * subs.length)];
       if(sub === "High") {
-        dex+=2
         int++
       } else if (sub === "Wood"){
-        dex+=2
         wis++
       } else {
-        dex+=2
         cha++
       }
     }
@@ -69,6 +67,13 @@ var races = [
     if(race === "Half Elf") {
       cha+=2;
     }
+    if(race === "Halfling") {
+      dex+=2;
+    }
+    if(race === "Human") {
+      
+    }
+    
     
     if(sub) {
       let charEmbed = new Discord.RichEmbed()
@@ -82,6 +87,16 @@ var races = [
     .setDescription(`**Race:** ${race}\n**Class:** ${charClass}\n\n**Strength:** ${str}\n**Dexterity:** ${dex}\n**Constitution:** ${con}\n**Intelligence:** ${int}\n**Wisdom:** ${wis}\n**Charisma:** ${cha}`)
     
     message.channel.send(charEmbed);
+    }
+  
+    function rollStat() {
+      let i = 0
+      let stat = [0, 0, 0, 0]
+      while(i < 4) {
+        stat[i] = Math.floor(Math.random()*6 + 1)
+        i++
+      }
+      
     }
 };
 

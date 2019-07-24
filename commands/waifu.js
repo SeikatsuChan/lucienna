@@ -16,7 +16,10 @@ const Discord = require("discord.js")
   if(waifu.toLowerCase() === "inno" || waifu === "<@479380221137780756>") {
     rating = "101%"
   }
-    
+  if(waifu.toLowerCase() === "scarlet") {
+    return message.channel.send("Don't you dare.");
+  }
+
   let wifeEmbed = new Discord.RichEmbed()
   .setTitle(waifu)
   .setDescription(`Waifu material: **${rating}**`)
